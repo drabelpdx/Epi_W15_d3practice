@@ -7,8 +7,6 @@
 
     <script>
 
-      var data = [1, 2, 3, 4, 5];
-
       var scale = d3.scale.linear()
         .domain([1, 5]) //Data space
         .range([0, 200]); //Pixal space
@@ -38,9 +36,11 @@
 
       }
 
-      render([1, 2, 2.5], "red");
-      render([1, 2, 3, 4, 5], "blue");
-      render([1, 2], "green");
+      setTimeout( function (){ render([1, 2, 2.5],     "red"); },    1000);
+      setTimeout( function (){ render([1, 2, 3, 4, 5], "blue");},    2000);
+      setTimeout( function (){ render([1, 2],          "green");},   3000);
+      setTimeout( function (){ render([3, 4, 5],       "cyan");},    4000);
+      setTimeout( function (){ render([4, 5],          "magenta");}, 5000);
 
     </script>
   </body>
