@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=8jvoTV54nXw
+
+
+https://www.dashingd3js.com/adding-a-dom-element
+
+
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files
+
+
+var svg = d3.select("body").append("svg")

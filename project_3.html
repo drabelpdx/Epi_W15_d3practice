@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <script>
+    d3.csv("data.csv", function (myArrayOfObjects) {
+      myArrayOfObjects.forEach(function (d){
+        console.log(d.x + d.y);
+      });
+    });
+    function type(d){
+      d.x = parseFloat(d.x);
+      d.y = parseFloat(d.y);
+      return d;
+    }
+
+    function type(d){
+      d.x = +d.x;
+      d.y = +d.y;
+      return d;
+    }
+  </script>
+</body>
+</body>
+</html>
