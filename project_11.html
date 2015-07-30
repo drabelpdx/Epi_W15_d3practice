@@ -24,7 +24,7 @@
 
       // d.3 extent
       d3.csv("iris.csv", type, function (data){
-        var extent = d3.extent(data, function (d){return d.sepal_length; });
+        var extent = d3.extent(data, function (d){ return d.sepal_length; });
         console.log(extent);
       });
 
